@@ -48,14 +48,24 @@ body{
     height: 260px;
     @include flex();
     justify-content: center;
-
-    h1{
-        font-size: 7rem;
-        margin-top: 1.5rem;
-    }
-
 }
  
+.input-shell{
+    
+    input{
+        // font-size: 7rem;
+        margin-top: 1.5rem;
+        padding: .6rem;
+        border: rgb(141, 71, 255) solid 5px;
+    }
+    button{
+        padding: .4rem;
+        font-weight: 600;
+        background-color: #fb379600;
+        color: white;
+        border: white solid 2px;
+    }
+}
 
 .bottom-side{
      @include flex();

@@ -51,9 +51,18 @@ body {
           justify-content: center;
 }
 
-.top-side h1 {
-  font-size: 7rem;
+.input-shell input {
   margin-top: 1.5rem;
+  padding: .6rem;
+  border: #8d47ff solid 5px;
+}
+
+.input-shell button {
+  padding: .4rem;
+  font-weight: 600;
+  background-color: #fb379600;
+  color: white;
+  border: white solid 2px;
 }
 
 .bottom-side {
