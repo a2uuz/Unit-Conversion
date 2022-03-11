@@ -4,7 +4,7 @@
 //COLORS
 $Dark-bg: #1F2937;
 $Light-bg: #FBF7EE;
-$Pharagraph: #4E4E4E;
+$Pharagraph: #d2d2d2;
 
 //FONTS
 $font-primary:'Inter', sans-serif;
@@ -40,10 +40,42 @@ body{
     height: 550px;
 }
 
+
+
 .top-side{
     color: $Light-bg;
     background:  linear-gradient(135deg, #585DFE, #FB3796);
     height: 260px;
     @include flex();
     justify-content: center;
+
+    h1{
+        font-size: 7rem;
+        margin-top: 1.5rem;
+    }
+
+}
+ 
+
+.bottom-side{
+     @include flex();
+    justify-content: center;
+    height: 300px;
+    text-align: center;
+    
+
+    strong{
+        color: $Light-bg;
+        font-weight: 600;
+        font-size: medium;
+        margin-bottom:1rem ;
+    }
+}
+.row-result{
+    display: flex;
+
+    p{
+        margin: 1rem;
+        color: $Pharagraph;
+    }
 }
