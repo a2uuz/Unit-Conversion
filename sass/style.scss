@@ -98,3 +98,26 @@ button:active{
     }
 }
 
+@media (min-width: 675px){
+    
+.container{
+    background-color: $Dark-bg;
+    width: 550px;
+    height: 500px;
+}
+
+.top-side{
+    height: 220px;
+}
+
+.bottom-side{
+     @include flex();
+    height: 290px;
+    font-size: 1rem;
+}
+
+.row-result{
+    display: flex;
+    flex-direction: row;
+}
+}
