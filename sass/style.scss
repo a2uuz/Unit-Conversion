@@ -15,6 +15,7 @@ $font-primary:'Inter', sans-serif;
         display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     @content;
 }
 
@@ -27,27 +28,27 @@ body{
     background-color: linea;
     font-family: $font-primary;
     @include flex();
-    justify-content: center;  
     height: 100vh;
     overflow: hidden;
 }
 
 
-
 .container{
     background-color: $Dark-bg;
-    width: 550px;
-    height: 550px;
+    width: 350px;
+    height: 600px;
+    border-radius: 2rem;
+    text-align: center;
 }
-
 
 
 .top-side{
     color: $Light-bg;
     background:  linear-gradient(135deg, #585DFE, #FB3796);
-    height: 260px;
+    height: 220px;
     @include flex();
-    justify-content: center;
+    border-radius: 2rem 2rem 0 0;
+
 }
  
 .input-shell{
@@ -59,11 +60,11 @@ body{
         border: rgb(141, 71, 255) solid 5px;
     }
     button{
-        padding: .4rem;
+        padding: .5rem;
         font-weight: 600;
         background-color: #fb379600;
         color: white;
-        border: white solid 2px;
+        border: white solid 4px;
     
     }   
 }
@@ -75,9 +76,8 @@ button:active{
 
 .bottom-side{
      @include flex();
-    justify-content: center;
-    height: 300px;
-    text-align: center;
+    height: 385px;
+    font-size: .9rem;
     
 
     strong{
@@ -89,9 +89,12 @@ button:active{
 }
 .row-result{
     display: flex;
+     flex-direction: column;
+     margin: 1rem;
 
     p{
-        margin: 1rem;
+        margin: .5rem;
         color: $Pharagraph;
     }
 }
+
