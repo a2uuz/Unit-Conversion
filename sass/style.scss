@@ -64,7 +64,13 @@ body{
         background-color: #fb379600;
         color: white;
         border: white solid 2px;
-    }
+    
+    }   
+}
+button:active{
+    color: black;
+    border: black solid 2px;
+    background-color: white
 }
 
 .bottom-side{

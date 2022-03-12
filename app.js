@@ -1,8 +1,24 @@
-let go = document.getElementById('go');
+//  GO BUTTON EVENT LISTENER
 
-go.addEventListener('click', () =>{
+/* kilograms to pound 
+Eq = Equation */
+let btn = document.getElementById('go');
+btn.addEventListener('click', () =>{
 let input = document.getElementById('input').value;
-console.log(input);
+let kiloToPoun = document.getElementById('k-p');
+let kiloToPounEq = input * 2.205;
+kiloToPoun.textContent += `${input} kilos = ${kiloToPounEq.toFixed(3)} pounds`;
+console.log(kiloToPoun);
 })
 
-let kP = document.getElementById(k-p);
+// // ENTER KEY EVENTLISTENER
+// let classInput = document.querySelector('.inputt');
+// classInput.addEventListener('keydown', (e) =>{
+// if( e.key === 'Enter'){
+// let input = document.getElementById('input').value;
+// let kiloToPoun = document.getElementById('k-p');
+// let kiloToPounEq = input * 2.205;
+// kiloToPoun.textContent += `${input} kilos = ${kiloToPounEq.toFixed(3)} pounds`;
+// console.log(kiloToPoun);
+// }
+// })
