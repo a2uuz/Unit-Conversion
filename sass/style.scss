@@ -35,48 +35,48 @@ body{
 
 .container{
     background-color: $Dark-bg;
-    width: 350px;
-    height: 600px;
     border-radius: 2rem;
     text-align: center;
+    width: 50%;
 }
 
 
 .top-side{
+    height: 220px;
     color: $Light-bg;
     background:  linear-gradient(135deg, #585DFE, #FB3796);
-    height: 220px;
     @include flex();
     border-radius: 2rem 2rem 0 0;
-
 }
+
  
 .input-shell{
     
     input{
         // font-size: 7rem;
-        margin-top: 1.5rem;
-        padding: .6rem;
-        border: rgb(141, 71, 255) solid 5px;
+        margin-top: 2rem;
+        padding: .5rem 1rem;
+        border: rgb(221, 216, 230) solid 5px;
+        border-radius: 10rem;
+        
+
     }
     button{
         padding: .5rem;
         font-weight: 600;
         background-color: #fb379600;
         color: white;
-        border: white solid 4px;
+        border: rgb(255, 255, 255) solid 4px;
+        border-radius: 50%;
     
     }   
 }
-button:active{
-    color: black;
-    border: black solid 2px;
-    background-color: white
+button:hover{
+   cursor: pointer;
 }
 
 .bottom-side{
-     @include flex();
-    height: 385px;
+    padding: 2rem 1rem 1rem 1rem;
     font-size: .9rem;
     
 
@@ -88,36 +88,12 @@ button:active{
     }
 }
 .row-result{
-    display: flex;
-     flex-direction: column;
-     margin: 1rem;
+    @include flex();
+    flex-direction: row;
+    padding: 2rem;
+    color: $Pharagraph;
 
     p{
         margin: .5rem;
-        color: $Pharagraph;
     }
-}
-
-@media (min-width: 675px){
-    
-.container{
-    background-color: $Dark-bg;
-    width: 550px;
-    height: 500px;
-}
-
-.top-side{
-    height: 220px;
-}
-
-.bottom-side{
-     @include flex();
-    height: 290px;
-    font-size: 1rem;
-}
-
-.row-result{
-    display: flex;
-    flex-direction: row;
-}
 }
