@@ -30,7 +30,7 @@ body {
   background-color: #1F2937;
   border-radius: 2rem;
   text-align: center;
-  width: 50%;
+  min-width: 500px;
 }
 
 .top-side {
